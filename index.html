@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <title>Afmælisgjöf</title>
+    <link rel="stylesheet" href="ammali.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script>
+      function breytaMynd(){
+          let img = document.querySelector("#bannerImage");
+          img.setAttribute("src", 'images/gjof.png');
+          confetti();
+      }
+    </script>
+        <div class="text">
+          <p>Til hamingju með afmælið!</p>
+        </div>
+        <div class="gift">
+            <img id="bannerImage" width="300px" height="300px" src="images/gift.png">
+        </div>
+        <div class="confettibutton">
+            <button onclick="breytaMynd()">
+                Opna
+            </button>
+        </div>
+</body>
+</html>
+
+
